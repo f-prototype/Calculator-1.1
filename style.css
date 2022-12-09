@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #43c08c;
+    clip-path: circle(600px at left 800px);
+    z-index: -1;
+}
+
+
+.circle2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #474e87;
+    clip-path: circle(600px at right -50px);
+    z-index: -1;
+}
+
+                            /* КАЛЬКУЛЯТОР */
+.calculator {
+    width: 400px;
+    height: 90vh;
+    margin: 40px auto; 
+    border-radius: 20px;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+                            /* НАВИГАЦИЯ */
+.navigation {
+    width: 100%;
+    height: 10%;
+    padding: 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #179e7c;
+    border-radius: 20px;
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-button {
+    background-color: #fff;
+    color: rgb(134, 134, 134);
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #179e7c !important;
+    color: #fff !important;
+}
+
+                            /* РЕЗУЛЬТАТ */
+.result{
+    position: relative;
+    height: 30% ;
+    width: 100%;
+}
+
+.all-Math {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+    bottom: 130px;
+    font-size: 1.5em;
+    opacity: 0.7;
+    padding-right: 25px;
+    padding-bottom: 0;
+    color: #ccc;
+}
+
+.last-Math {
+    position: absolute;
+    bottom: 60px;
+    height: 70px;
+    width: 100%;
+    text-align: right;
+    padding: 15px;
+    padding-right: 25px;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.resultTimer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    font-weight: 800;
+    color: #0c212a;
+
+}
+
+                            /* КНОПКИ */
+.buttons {
+    width: 100%;
+    height: 50%;
+    border-top: 1px solid #179e7c;
+    border-radius: 20px;
+    padding-top: 5px;
+}
+
+.fsStr,.twsStr,.trStr,.foStr,.fivStr {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+}
+
+.calculator-button {
+    display: flex;
+    width: 25%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    cursor: pointer;
+    font-weight: 800;
+    color: #ccc;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+    
+
+}
+
+.calculator-button:hover {
+    color: #111;
+    border-radius: 50%;
+    background-color: #ccc;
+    
+}
+
+.black {
+    color: rgb(134, 134, 134);
+}
+
+.green {
+    color: #179e7c;
+    font-weight: 800;
+}
+
+.green:hover {
+    background-color: #CCC;
+    color: #179e7c;
+}
+
+.whiteDark {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #179e7c !important;
+}
+
+.null:hover {
+    cursor: auto;
+    background-color: #fff;
+}
+
+                 /* КНОПКИ ТАЙМЕРА */
+.timerNavigation {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    border: 0;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.timerNavigation svg {
+    transition: transform 0.2s linear;
+}
+.timerNavigation svg:hover {
+    transform: scale(0.9);
+}
+
+.timerNavigation path {
+    fill: #0c212a !important ;
+}
+
+
+.stop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    border: 0;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.clearTimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    border: 0;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+                            /* ТЕМНАЯ ТЕМА */
+.Dark-calculator {
+    background-color: #283637;
+}
+
+.Dark-theme {
+    background-color: #283637;
+}
+
+.reversColor {
+    filter: invert(1);
+}
+
+.Dark-nav {
+    background-color: #283637;
+    color: #ccc;
+}
+
+.Dark-buttom {
+    color:#FFF;
+}
+
+.lastDark {
+    color: #fff;
+}
+
+.numDark {
+    color: #ccc;
+}
+
+.DarkStartStopClear path {
+    fill: #c0c0c0 !important;
+}
+
+.greyDark {
+    background-color: #CCC;
+    border-radius: 50%;
+    color: #111;
+}
+
+.greyDark:hover {
+    background-color: rgb(154, 154, 154);
+}
+
+.DarkStartStopClear {
+    background-color: #283637;
+}
+
+.DarkImage:hover {
+    background-color: rgb(177, 165, 165);
+    border-radius: 50%;
+}
+
+.darkNull:hover {
+    background-color: #283637;
+}
